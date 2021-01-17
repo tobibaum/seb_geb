@@ -32,6 +32,7 @@ def my_form_post():
     global state
     global state_engine
     text = request.form['text']
+    print(text)
 
     if state < len(state_engine) and text.lower() == state_engine[state][1]:
         state += 1
