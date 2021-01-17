@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Super Fake!</title>
+	<head>
+	<style>
+		/* Bottom right text */
+		.container {
+		  position: relative;
+		  color: white;
+		}
+
+		.top-left {
+		  position: absolute;
+		  top: 150px;
+		  left: 30px;
+		  background-color: black;
+		  color: white;
+		  padding-left: 20px;
+		  padding-right: 20px;
+		}
+		.bottom-right {
+		  position: absolute;
+		  bottom: 150px;
+		  right: 30px;
+		  background-color: black;
+		  color: white;
+		  padding-left: 20px;
+		  padding-right: 20px;
+		}
+	</style>
+    </head>
+</head>
+
+<body>
+<div class="container">
+	<img src="{{ user_image }}" alt="FAKE!!!" height=1000>
+	<div class="{{ img_class }}">
+		<form method="POST">
+			<h4> Password </h4>
+			<input name="text" alt-text="pw: biersuche"><br><br>
+			<input type="submit">
+		</form>
+	</div>
+</div>
+
+</body>
+</html>
